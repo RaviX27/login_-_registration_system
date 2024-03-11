@@ -13,7 +13,7 @@ function Signup() {
     e.preventDefault()
     axios.post('http://localhost:3001/register',{name, email, password})
     .then(result => {console.log(result)
-    navigate('/login')
+    navigate('/')
     })
     .catch(err => console.log(err))
   }
@@ -67,7 +67,7 @@ function Signup() {
           </button>
           </form>
           <p className="p-1 "><strong>Already Have an Account?</strong></p>
-          <Link to = "/login" className="btn btn-default border w-100 bg-light rounded-5 text-decoration-none">
+          <Link to = "/" className="btn btn-default border w-100 bg-light rounded-5 text-decoration-none">
             Login
           </Link>
         
